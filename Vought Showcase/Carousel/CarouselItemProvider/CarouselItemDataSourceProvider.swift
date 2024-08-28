@@ -21,10 +21,10 @@ import Foundation
 class CarouselItemDataSourceProvider {
     func items() -> [CarouselItem] {
         return [
-            StoryItem(imageName: "butcher"),
-            StoryItem(imageName: "frenchie"),
-            StoryItem(imageName: "hughei"),
-            StoryItem(imageName: "mm")
+            StoryItem(imageName: "billybutcher"),
+            StoryItem(imageName: "frenchiee"),
+            StoryItem(imageName: "hughie"),
+            StoryItem(imageName: "mothersMilk")
             // Add more items as needed
         ]
     }
