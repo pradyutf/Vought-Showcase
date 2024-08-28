@@ -13,8 +13,24 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        initCarouselView()
+        //initCarouselView()
     }
+    
+//    private func initCarouselView() {
+//        // Create a carousel item provider
+//        let carouselItemProvider = CarouselItemDataSourceProvider()
+//        
+//        // Create carouselViewController
+//        let carouselViewController = CarouselViewController(items: carouselItemProvider.items())
+//        
+//        // Add carousel view controller in container view
+//        add(asChildViewController: carouselViewController, containerView: containerView)
+//    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+         super.viewDidAppear(animated)
+         initCarouselView()
+     }
     
     private func initCarouselView() {
         // Create a carousel item provider
@@ -23,8 +39,9 @@ class MainViewController: UIViewController {
         // Create carouselViewController
         let carouselViewController = CarouselViewController(items: carouselItemProvider.items())
         
-        // Add carousel view controller in container view
-        add(asChildViewController: carouselViewController, containerView: containerView)
+        // Present the carouselViewController full screen
+        carouselViewController.modalPresentationStyle = .fullScreen
+        present(carouselViewController, animated: true, completion: nil)
     }
     
 }

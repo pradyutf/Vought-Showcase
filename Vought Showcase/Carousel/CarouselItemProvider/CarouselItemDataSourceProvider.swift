@@ -7,13 +7,25 @@
 
 import Foundation
 
-class CarouselItemDataSourceProvider: CarouselItemDataSourceProviderType {
+//class CarouselItemDataSourceProvider: CarouselItemDataSourceProviderType {
+//    func items() -> [CarouselItem] {
+//        return [
+//            HomeLanderCarouselItem(),
+//            MaeveCarouselItem(),
+//            BlackNoirCarouselItem(),
+//            ATrainCarouselItem(),
+//        ]
+//    }
+//}
+
+class CarouselItemDataSourceProvider {
     func items() -> [CarouselItem] {
         return [
-            HomeLanderCarouselItem(),
-            MaeveCarouselItem(),
-            BlackNoirCarouselItem(),
-            ATrainCarouselItem(),
+            StoryItem(imageName: "butcher"),
+            StoryItem(imageName: "frenchie"),
+            StoryItem(imageName: "hughei"),
+            StoryItem(imageName: "mm")
+            // Add more items as needed
         ]
     }
 }
