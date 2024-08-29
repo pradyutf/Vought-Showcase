@@ -190,3 +190,13 @@ extension CarouselViewController: SegmentedProgressBarDelegate {
     }
 }
 
+extension CarouselViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        // Allow simultaneous recognition of long press and swipe down gestures
+        if (gestureRecognizer is UILongPressGestureRecognizer && otherGestureRecognizer is UISwipeGestureRecognizer) ||
+           (gestureRecognizer is UISwipeGestureRecognizer && otherGestureRecognizer is UILongPressGestureRecognizer) {
+            return true
+        }
+        return false
+    }
+}
