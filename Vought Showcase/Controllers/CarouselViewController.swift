@@ -272,6 +272,10 @@ final class CarouselViewController: UIViewController {
     private func setupGestures() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         containerView.addGestureRecognizer(tapGesture)
+        
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
+        longPressGesture.minimumPressDuration = 0.1 // Adjust as needed
+        containerView.addGestureRecognizer(longPressGesture)
     }
     
     @objc private func handleTap(_ gesture: UITapGestureRecognizer) {
@@ -284,6 +288,19 @@ final class CarouselViewController: UIViewController {
             moveToPreviousItem()
         }
     }
+    
+    
+    @objc private func handleLongPress(_ gesture: UILongPressGestureRecognizer) {
+        switch gesture.state {
+        case .began:
+            segmentedProgressBar.isPaused = true
+        case .ended, .cancelled:
+            segmentedProgressBar.isPaused = false
+        default:
+            break
+        }
+    }
+
     
     // MARK: - Navigation
     
