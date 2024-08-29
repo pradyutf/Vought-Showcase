@@ -12,8 +12,9 @@ class IntermediateViewController: UIViewController {
     
     private let launchButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Launch Story", for: .normal)
+        button.setTitle("Homelander's Nightmare", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.tintColor = .systemBlue
         return button
     }()
     
