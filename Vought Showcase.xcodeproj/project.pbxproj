@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BD2BED62C81045200CCB65E /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2BED52C81045200CCB65E /* IntermediateViewController.swift */; };
 		5E1E353D2C623996000D7DEF /* UIViewController+AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E353C2C623996000D7DEF /* UIViewController+AddChild.swift */; };
 		5E1E353F2C6247C5000D7DEF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E353E2C6247C5000D7DEF /* ImageViewController.swift */; };
 		5E1E35422C6248A6000D7DEF /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E35412C6248A6000D7DEF /* CarouselItem.swift */; };
@@ -27,7 +28,6 @@
 		5E87DC8F2C6232440005D86C /* Vought_ShowcaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E87DC8E2C6232440005D86C /* Vought_ShowcaseUITests.swift */; };
 		5E87DC912C6232440005D86C /* Vought_ShowcaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E87DC902C6232440005D86C /* Vought_ShowcaseUITestsLaunchTests.swift */; };
 		5E87DCA02C6236A30005D86C /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E87DC9F2C6236A30005D86C /* CarouselViewController.swift */; };
-		5E87DCA22C62375E0005D86C /* CarouselViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E87DCA12C62375E0005D86C /* CarouselViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BD2BED52C81045200CCB65E /* IntermediateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
 		5E1E353C2C623996000D7DEF /* UIViewController+AddChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddChild.swift"; sourceTree = "<group>"; };
 		5E1E353E2C6247C5000D7DEF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		5E1E35412C6248A6000D7DEF /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		5E87DC8E2C6232440005D86C /* Vought_ShowcaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vought_ShowcaseUITests.swift; sourceTree = "<group>"; };
 		5E87DC902C6232440005D86C /* Vought_ShowcaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vought_ShowcaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5E87DC9F2C6236A30005D86C /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
-		5E87DCA12C62375E0005D86C /* CarouselViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,10 +211,10 @@
 			isa = PBXGroup;
 			children = (
 				5E87DC9F2C6236A30005D86C /* CarouselViewController.swift */,
-				5E87DCA12C62375E0005D86C /* CarouselViewController.xib */,
 				5E87DC712C6232430005D86C /* MainViewController.swift */,
 				5E87DC732C6232430005D86C /* Main.storyboard */,
 				5E1E353E2C6247C5000D7DEF /* ImageViewController.swift */,
+				0BD2BED52C81045200CCB65E /* IntermediateViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -323,7 +323,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E87DCA22C62375E0005D86C /* CarouselViewController.xib in Resources */,
 				5E87DC772C6232440005D86C /* Assets.xcassets in Resources */,
 				5E87DC7A2C6232440005D86C /* Base in Resources */,
 				5E87DC752C6232430005D86C /* Base in Resources */,
@@ -360,6 +359,7 @@
 				5E1E35462C624AB9000D7DEF /* MaeveCarouselItem.swift in Sources */,
 				5E1E354F2C624C2A000D7DEF /* CarouselItemDataSourceProviderType.swift in Sources */,
 				5E1E353D2C623996000D7DEF /* UIViewController+AddChild.swift in Sources */,
+				0BD2BED62C81045200CCB65E /* IntermediateViewController.swift in Sources */,
 				5E1E35512C624C4D000D7DEF /* CarouselItemDataSourceProvider.swift in Sources */,
 				5E1E35422C6248A6000D7DEF /* CarouselItem.swift in Sources */,
 				5E1E353F2C6247C5000D7DEF /* ImageViewController.swift in Sources */,
