@@ -15,21 +15,11 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
         //initCarouselView()
     }
-    
-//    private func initCarouselView() {
-//        // Create a carousel item provider
-//        let carouselItemProvider = CarouselItemDataSourceProvider()
-//        
-//        // Create carouselViewController
-//        let carouselViewController = CarouselViewController(items: carouselItemProvider.items())
-//        
-//        // Add carousel view controller in container view
-//        add(asChildViewController: carouselViewController, containerView: containerView)
-//    }
-    
     override func viewDidAppear(_ animated: Bool) {
          super.viewDidAppear(animated)
-         initCarouselView()
+         //initCarouselView()
+        showIntermediateViewController()
+
      }
     
     private func initCarouselView() {
@@ -42,6 +32,16 @@ class MainViewController: UIViewController {
         // Present the carouselViewController full screen
         carouselViewController.modalPresentationStyle = .fullScreen
         present(carouselViewController, animated: true, completion: nil)
+        
+    }
+    
+    private func showIntermediateViewController() {
+        let intermediateViewController = IntermediateViewController()
+        addChild(intermediateViewController)
+        containerView.addSubview(intermediateViewController.view)
+        intermediateViewController.view.frame = containerView.bounds
+        intermediateViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        intermediateViewController.didMove(toParent: self)
     }
     
 }

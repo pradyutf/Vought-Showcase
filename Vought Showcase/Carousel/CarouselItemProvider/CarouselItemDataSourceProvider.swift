@@ -25,7 +25,6 @@ class CarouselItemDataSourceProvider {
             StoryItem(imageName: "frenchiee"),
             StoryItem(imageName: "hughie"),
             StoryItem(imageName: "mothersMilk")
-            // Add more items as needed
         ]
     }
 }
